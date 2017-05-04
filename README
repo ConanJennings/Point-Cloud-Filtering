@@ -1,0 +1,17 @@
+final_project_point_cloud.fuse
+	Point cloud data.
+	Data format:
+		[latitude] [longitude] [altitude] [intensity]
+
+point_cloud.obj
+	Processed point cloud data.
+	Data format:
+		[vertex] [x] [y] [z]
+
+convert.py
+	Used to convert .fuse file to .obj file during preprocessing
+
+dem.py
+	The main method plots the point_cloud.obj data using the finalized
+	method of combining grid query with filtered points.
+	To see triangulation graph, add tri=True to plot_dtm.
